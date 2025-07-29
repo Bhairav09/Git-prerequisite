@@ -1,0 +1,26 @@
+{
+  "name": "playwright-e2e",
+  "version": "1.0.0",
+  "description": "End-to-end test suite using Playwright for patient registration and appointment booking.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:trace": "npx playwright test --trace on",
+    "test:single": "npx playwright test tests/main.spec.js"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.14"
+  }
+}
